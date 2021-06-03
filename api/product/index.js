@@ -7,6 +7,7 @@ const controller = require('./product.controller')
 
 router.get('/', controller.index)
 
+
 router.get('/phones', controller.getProducts('phones'))
 
 router.get('/acs', controller.getProducts('acs'))
@@ -21,6 +22,8 @@ router.get('/search/:text', controller.getProductBySearching)
 
 router.get('/:id', controller.getProductById)
 
+router.post('/updateProductById', controller.updateProductById)
 
+router.post('/deleteProductById', controller.deleteProductById)
 
 module.exports = router

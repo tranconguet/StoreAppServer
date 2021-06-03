@@ -26,6 +26,7 @@ var OrderSchema = new Schema({
     discount: {type: String, default: "0 %"},
     subTotal: {type: String},
     total: {type: String, required: true},
+    orderTime: {type: String, required: true},
     // payment info
     status: { type: String, default: 'pending' }, // pending, paid/failed, delivered, canceled, refunded.
     // paymentType: { type: String, default: 'braintree' },

@@ -10,4 +10,8 @@ router.get('/:id', controller.getById)
 
 router.post('/', controller.create)
 
+router.post('/deleteOrderById', controller.deleteById)
+
+router.post('/updateOrderById', controller.updateOrderById)
+
 module.exports = router
