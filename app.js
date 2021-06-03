@@ -28,7 +28,7 @@ app.use('/discounts', discountRouter)
 mongoose.connect(process.env.DB_CONNECT,{ useNewUrlParser: true, useUnifiedTopology: true })
 
 app.get('/',(req,res) =>{   
-    res.send('here we goo ~');
+    res.send('here we goo ~~');
 });
 
 
