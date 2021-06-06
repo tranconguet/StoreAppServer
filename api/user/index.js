@@ -8,11 +8,12 @@ router.get('/', controller.index)
 
 router.get('/token', controller.getById)
 
-router.put('/:id',controller.updateById)
-
 router.post('/register',controller.create)
 
 router.post('/login',controller.login)
+
+router.put('/:id',controller.updateById)
+
 
 
 module.exports = router
