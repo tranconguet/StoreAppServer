@@ -6,13 +6,15 @@ const controller = require('./user.controller');
 
 router.get('/', controller.index)
 
+router.put('/:id',controller.updateById)
+
 router.get('/token', controller.getById)
 
 router.post('/register',controller.create)
 
 router.post('/login',controller.login)
 
-router.put('/:id',controller.updateById)
+
 
 
 
